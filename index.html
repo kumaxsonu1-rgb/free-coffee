@@ -64,17 +64,25 @@
     <nav class="fixed w-full z-50 bg-coffee-950/90 backdrop-blur-md border-b border-white/5 py-4">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="#" class="block">
-                <img src="https://i.ibb.co/pBbT5p7c/IMG-2256-2.png" alt="MG Cafe & Restro Logo" class="h-12 md:h-16 w-auto object-contain">
+                <img src="https://i.ibb.co/pBbT5p7c/IMG-2256-2.png" alt="MG Cafe & Restro Logo" class="h-10 md:h-16 w-auto object-contain">
             </a>
-            <!-- Mobile: Hidden phone button to save space, visible on Desktop -->
-            <a href="tel:+918102222381" class="hidden md:inline-block px-6 py-2 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white transition duration-300 rounded-sm uppercase text-xs tracking-widest font-semibold">
-                <i class="fa-solid fa-phone mr-2"></i> +91 81022 22381
-            </a>
+            
+            <!-- Added Action Container -->
+            <div class="flex items-center gap-3">
+                <!-- Mobile & Desktop Visible CTA -->
+                <a href="https://wa.me/918102222381?text=Hi%20MG%20Cafe%2C%20I%20would%20like%20to%20book%20a%20table%20for%20the%20New%20Year%20Offer." target="_blank" class="bg-gold-600 hover:bg-gold-500 text-white text-[10px] md:text-xs font-bold uppercase tracking-widest px-3 py-2 md:px-4 md:py-2 rounded-sm shadow-lg shadow-gold-600/20 animate-pulse flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-sm md:text-base"></i> Book Table
+                </a>
+
+                <!-- Desktop Only Phone -->
+                <a href="tel:+918102222381" class="hidden md:inline-block px-4 py-2 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white transition duration-300 rounded-sm uppercase text-xs tracking-widest font-semibold">
+                    <i class="fa-solid fa-phone mr-2"></i> +91 81022 22381
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <!-- Changed min-h-screen to min-h-[100svh] for better mobile browser support (addresses URL bar resize) -->
     <section class="relative min-h-[100svh] flex items-center justify-center hero-bg px-6 pt-24 pb-12">
         <div class="max-w-4xl mx-auto text-center relative z-10">
             
@@ -101,7 +109,7 @@
                 </a>
                 <!-- Updated Text to Hinglish to match screenshot & improved mobile button sizing -->
                 <a href="https://maps.app.goo.gl/idGFPyQZvPCoyaRN9" target="_blank" class="w-full md:w-auto px-6 py-3 md:px-8 md:py-4 bg-transparent border border-white/20 hover:border-white text-white font-bold uppercase tracking-widest transition duration-300 text-sm md:text-base">
-                    Cafe Location Dekhein <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
+                    Patna Location Dekhein <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-xs"></i>
                 </a>
             </div>
 
@@ -129,7 +137,6 @@
     </section>
 
     <!-- The Catch (Scarcity Section) -->
-    <!-- Reduced top/bottom padding for mobile (py-12) vs desktop (md:py-20) -->
     <section class="py-12 md:py-20 bg-coffee-900 border-t border-white/5">
         <div class="container mx-auto px-6">
             <div class="max-w-3xl mx-auto text-center">
@@ -142,13 +149,13 @@
                     <i class="fa-solid fa-triangle-exclamation absolute -right-10 -bottom-10 text-9xl text-white/5 group-hover:text-gold-500/10 transition duration-500"></i>
                     
                     <h3 class="text-xl md:text-2xl font-bold text-white mb-4">Pehle 25 Logon Ke Liye. No Exceptions.</h3>
-                    <p class="text-gray-400 mb-8 leading-relaxed text-sm md:text-base">
+                    <p class="text-gray-400 mb-6 leading-relaxed text-sm md:text-base">
                         Jaise hi 25 cups poore hue, free promotion band. That's it for the day. <br>
                         <span class="text-white italic">Jo pehle aayega, wahi payega.</span>
                     </p>
 
                     <!-- Real Data / Social Proof -->
-                    <div class="bg-red-950/30 border-l-4 border-red-600 p-4 text-left">
+                    <div class="bg-red-950/30 border-l-4 border-red-600 p-4 text-left mb-8">
                         <p class="text-red-200 font-bold text-xs md:text-sm uppercase tracking-wide mb-1">
                             <i class="fa-solid fa-circle-exclamation mr-2"></i> Warning: Bheed Zyada Hai
                         </p>
@@ -157,6 +164,11 @@
                             Aaj der mat karna!
                         </p>
                     </div>
+
+                    <!-- Added CTA inside Scarcity box -->
+                    <a href="https://wa.me/918102222381?text=Hi%20MG%20Cafe%2C%20I%20would%20like%20to%20book%20a%20table%20for%20the%20New%20Year%20Offer." target="_blank" class="inline-block w-full md:w-auto px-6 py-3 bg-transparent border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white font-bold uppercase tracking-widest transition duration-300 text-sm">
+                        Reserve Your Spot Now
+                    </a>
                 </div>
             </div>
         </div>
@@ -177,7 +189,7 @@
                         <i class="fa-solid fa-person-walking text-2xl md:text-3xl text-gold-500 group-hover:text-white transition duration-300"></i>
                     </div>
                     <h3 class="text-xl font-serif font-bold text-white mb-2">1. Jaldi Aayein</h3>
-                    <p class="text-gray-400 text-sm">Rozana limit sirf 25 hai. 12 PM shop khul jaati hai.</p>
+                    <p class="text-gray-400 text-sm">Rozana limit sirf 25 hai. 12 PM cafe khul jaati hai.</p>
                 </div>
 
                 <!-- Step 2 -->
@@ -211,7 +223,7 @@
             </div>
             
             <!-- Grid Layout for Images -->
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 max-w-6xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 max-w-6xl mx-auto mb-10">
                 <div class="group overflow-hidden rounded-lg border border-white/10 relative h-48 md:h-64">
                     <img src="https://img.flexifunnels.com/images/29821/WhatsAppImage20260103at9.43.08PM_dlg6a_1184.jpeg" alt="MG Cafe Vibes" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-300"></div>
@@ -236,6 +248,13 @@
                     <img src="https://img.flexifunnels.com/images/29821/WhatsAppImage20260103at9.43.08PM1_g3rk3_1110.jpeg" alt="MG Cafe Happy Faces" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition duration-300"></div>
                 </div>
+            </div>
+
+            <!-- Added CTA below Gallery -->
+            <div class="text-center">
+                <a href="https://wa.me/918102222381?text=Hi%20MG%20Cafe%2C%20I%20would%20like%20to%20book%20a%20table%20for%20the%20New%20Year%20Offer." target="_blank" class="inline-flex items-center gap-2 px-8 py-3 bg-gold-600 hover:bg-gold-500 text-white font-bold uppercase tracking-widest transition duration-300 shadow-lg shadow-gold-600/20 text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Book Your Table Now
+                </a>
             </div>
         </div>
     </section>
@@ -285,6 +304,8 @@
                         <div>
                             <h4 class="text-white font-bold uppercase tracking-wide text-sm">Contact</h4>
                             <p class="text-gray-400 text-sm md:text-base">+91 81022 22381</p>
+                            <!-- Added Small CTA Text Link -->
+                            <a href="https://wa.me/918102222381?text=Hi%20MG%20Cafe%2C%20I%20would%20like%20to%20book%20a%20table%20for%20the%20New%20Year%20Offer." class="inline-block mt-2 text-gold-500 font-bold text-xs uppercase tracking-widest border-b border-gold-500 hover:text-white hover:border-white transition pb-1">Book via WhatsApp</a>
                         </div>
                     </div>
                 </div>
